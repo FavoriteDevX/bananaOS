@@ -1,0 +1,8 @@
+<svg xmlns="http://w3.org" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Corpo da Banana (Amarela) -->
+  <path d="M20,80 C40,90 70,80 85,40 C90,25 80,10 75,15 C70,20 72,30 65,45 C55,65 35,70 20,65 Z" fill="#FFDE4D" stroke="#E5A93C" stroke-width="2"/>
+  <!-- Ponta da Banana -->
+  <path d="M18,78 C15,80 12,85 15,88 C18,91 23,88 22,84 Z" fill="#654321"/>
+  <!-- O corte da "Mordida" (Estilo Apple) -->
+  <circle cx="70" cy="40" r="15" fill="#1e1e1e" /> <!-- Mude a cor de preenchimento para bater com o fundo onde o logo for usado -->
+</svg>
