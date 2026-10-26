@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bananaOS Sequoia</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Apple-styled system icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Top Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-left">
+            <span class="menu-item bnn-logo" onclick="toggleWindow('about-window')">🍌</span>
+            <span class="menu-item bold">Banandler</span>
+            <span class="menu-item">File</span>
+            <span class="menu-item">Edit</span>
+            <span class="menu-item">View</span>
+            <span class="menu-item">Go</span>
+            <span class="menu-item">Window</span>
+            <span class="menu-item">Help</span>
+        </div>
+        <div class="menu-right">
+            <span class="menu-item"><i class="fa-solid fa-wifi"></i></span>
+            <span class="menu-item">100% <i class="fa-solid fa-battery-full"></i></span>
+            <span class="menu-item" id="current-time">Mon 9:41 AM</span>
+        </div>
+    </div>
+
+    <!-- Desktop Area -->
+    <div class="desktop" id="desktop">
+        <!-- Parody Window: "About This Banana" -->
+        <div class="window" id="about-window">
+            <div class="window-header">
+                <div class="window-buttons">
+                    <span class="close-btn" onclick="toggleWindow('about-window')"></span>
+                    <span class="minimize-btn"></span>
+                    <span class="expand-btn"></span>
+                </div>
+                <div class="window-title">About This Banana</div>
+            </div>
+            <div class="window-content about-content">
+                <div class="about-logo">🍌</div>
+                <div class="about-specs">
+                    <h2>bananaOS</h2>
+                    <p class="version">Version 15.0 (Potassium Peak)</p>
+                    <p><strong>MacBook Pro</strong> (16-inch, Bunch of 2026)</p>
+                    <p><strong>Chip:</strong> Banana M4 Max Rich</p>
+                    <p><strong>Memory:</strong> 24 GB Potassium RAM</p>
+                    <p><strong>Graphics:</strong> Chiquita Pro GPU 16-Core</p>
+                    <p class="serial">Serial Number: <span>B4N4N4M0RD1D4</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- macOS style Dock with Apple Icon Parodies -->
+    <div class="dock-container">
+        <div class="dock">
+            <!-- Finder Parody -->
+            <div class="dock-item" title="Banandler (Finder)">
+                <span class="dock-icon apple-finder"><i class="fa-regular fa-face-smile"></i></span>
+                <div class="dock-dot"></div>
+            </div>
+            
+            <!-- Safari Parody -->
+            <div class="dock-item" title="Bananari (Safari)">
+                <span class="dock-icon apple-safari"><i class="fa-solid fa-compass"></i></span>
+            </div>
+            
+            <!-- Messages Parody -->
+            <div class="dock-item" title="iBunch (Messages)">
+                <span class="dock-icon apple-messages"><i class="fa-solid fa-comment"></i></span>
+            </div>
+
+            <!-- Mail Parody -->
+            <div class="dock-item" title="BananaMail (Mail)">
+                <span class="dock-icon apple-mail"><i class="fa-solid fa-envelope"></i></span>
+            </div>
+
+            <!-- Music Parody -->
+            <div class="dock-item" title="Banana Music (Apple Music)">
+                <span class="dock-icon apple-music"><i class="fa-solid fa-music"></i></span>
+            </div>
+
+            <!-- Settings Parody -->
+            <div class="dock-item" onclick="toggleWindow('about-window')" title="Plantain Settings (System Settings)">
+                <span class="dock-icon apple-settings"><i class="fa-solid fa-gear"></i></span>
+            </div>
+            
+            <div class="dock-divider"></div>
+
+            <!-- Trash Parody -->
+            <div class="dock-item" title="Peel Trash">
+                <span class="dock-icon apple-trash"><i class="fa-solid fa-trash-can"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
