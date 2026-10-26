@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bananaOS Sequoia</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Apple-styled system icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
@@ -23,15 +21,15 @@
             <span class="menu-item">Help</span>
         </div>
         <div class="menu-right">
-            <span class="menu-item"><i class="fa-solid fa-wifi"></i></span>
-            <span class="menu-item">100% <i class="fa-solid fa-battery-full"></i></span>
+            <span class="menu-item">📶</span>
+            <span class="menu-item">100% 🔋</span>
             <span class="menu-item" id="current-time">Mon 9:41 AM</span>
         </div>
     </div>
 
     <!-- Desktop Area -->
     <div class="desktop" id="desktop">
-        <!-- Parody Window: "About This Banana" -->
+        <!-- About This Banana Window -->
         <div class="window" id="about-window">
             <div class="window-header">
                 <div class="window-buttons">
@@ -56,45 +54,88 @@
         </div>
     </div>
 
-    <!-- macOS style Dock with Apple Icon Parodies -->
+    <!-- macOS style Dock with Real SVG Parody Logos -->
     <div class="dock-container">
         <div class="dock">
-            <!-- Finder Parody -->
+            
+            <!-- Finder / Banandler -->
             <div class="dock-item" title="Banandler (Finder)">
-                <span class="dock-icon apple-finder"><i class="fa-regular fa-face-smile"></i></span>
+                <div class="dock-icon apple-finder">
+                    <svg viewBox="0 0 100 100" width="30" height="30">
+                        <path d="M20,50 Q20,20 50,20 Q50,50 20,50 Z" fill="none" stroke="#1d4ed8" stroke-width="6" stroke-linejoin="round"/>
+                        <path d="M80,50 Q80,80 50,80 Q50,50 80,50 Z" fill="none" stroke="#1d4ed8" stroke-width="6" stroke-linejoin="round"/>
+                        <circle cx="38" cy="40" r="5" fill="#1d4ed8"/>
+                        <circle cx="62" cy="60" r="5" fill="#1d4ed8"/>
+                        <path d="M35,65 Q50,75 65,35" fill="none" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                </div>
                 <div class="dock-dot"></div>
             </div>
             
-            <!-- Safari Parody -->
+            <!-- Safari / Bananari -->
             <div class="dock-item" title="Bananari (Safari)">
-                <span class="dock-icon apple-safari"><i class="fa-solid fa-compass"></i></span>
+                <div class="dock-icon apple-safari">
+                    <svg viewBox="0 0 100 100" width="32" height="32">
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="white" stroke-width="4"/>
+                        <path d="M45,45 L65,25 L55,55 L35,75 Z" fill="#FF453A"/>
+                        <path d="M45,45 L35,75 L55,55 Z" fill="#ffffff" opacity="0.8"/>
+                        <circle cx="50" cy="50" r="2" fill="white"/>
+                    </svg>
+                </div>
             </div>
             
-            <!-- Messages Parody -->
+            <!-- iBunch (Messages) -->
             <div class="dock-item" title="iBunch (Messages)">
-                <span class="dock-icon apple-messages"><i class="fa-solid fa-comment"></i></span>
+                <div class="dock-icon apple-messages">
+                    <svg viewBox="0 0 100 100" width="28" height="28">
+                        <path d="M15,45 C15,25 40,20 50,20 C75,20 85,35 85,50 C85,68 65,75 50,75 C45,75 35,78 25,82 C28,75 22,72 18,68 C14,60 15,52 15,45 Z" fill="white"/>
+                    </svg>
+                </div>
             </div>
 
-            <!-- Mail Parody -->
+            <!-- BananaMail -->
             <div class="dock-item" title="BananaMail (Mail)">
-                <span class="dock-icon apple-mail"><i class="fa-solid fa-envelope"></i></span>
+                <div class="dock-icon apple-mail">
+                    <svg viewBox="0 0 100 100" width="28" height="28">
+                        <rect x="15" y="25" width="70" height="50" rx="8" fill="white" opacity="0.3"/>
+                        <path d="M15,30 L50,55 L85,30" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="15" y="25" width="70" height="50" rx="8" fill="none" stroke="white" stroke-width="5"/>
+                    </svg>
+                </div>
             </div>
 
-            <!-- Music Parody -->
-            <div class="dock-item" title="Banana Music (Apple Music)">
-                <span class="dock-icon apple-music"><i class="fa-solid fa-music"></i></span>
+            <!-- Banana Music -->
+            <div class="dock-item" title="Banana Music">
+                <div class="dock-icon apple-music">
+                    <svg viewBox="0 0 100 100" width="28" height="28">
+                        <path d="M35,70 C35,60 45,55 52,60 C52,40 52,25 52,25 L80,20 L80,40 L52,45" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="30" cy="70" r="10" fill="white"/>
+                        <circle cx="70" cy="60" r="10" fill="white"/>
+                    </svg>
+                </div>
             </div>
 
-            <!-- Settings Parody -->
-            <div class="dock-item" onclick="toggleWindow('about-window')" title="Plantain Settings (System Settings)">
-                <span class="dock-icon apple-settings"><i class="fa-solid fa-gear"></i></span>
+            <!-- Plantain Settings (System Settings) -->
+            <div class="dock-item" onclick="toggleWindow('about-window')" title="Plantain Settings">
+                <div class="apple-settings dock-icon">
+                    <svg viewBox="0 0 100 100" width="28" height="28">
+                        <circle cx="50" cy="50" r="16" fill="none" stroke="#4a5568" stroke-width="6"/>
+                        <path d="M50,10 L50,22 M50,78 L50,90 M10,50 L22,50 M78,50 L90,50 M22,22 L32,32 M68,68 L78,78 M22,78 L32,68 M68,32 L78,22" stroke="#4a5568" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
             </div>
             
             <div class="dock-divider"></div>
 
-            <!-- Trash Parody -->
+            <!-- Peel Trash -->
             <div class="dock-item" title="Peel Trash">
-                <span class="dock-icon apple-trash"><i class="fa-solid fa-trash-can"></i></span>
+                <div class="dock-icon apple-trash">
+                    <svg viewBox="0 0 100 100" width="28" height="28">
+                        <path d="M25,30 L30,85 A5,5 0 0,0 35,90 L65,90 A5,5 0 0,0 70,85 L75,30 Z" fill="none" stroke="white" stroke-width="5"/>
+                        <path d="M20,30 L80,30 M40,20 L60,20" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M42,42 L45,78 M58,42 L55,78" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
