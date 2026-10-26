@@ -8,8 +8,9 @@ Welcome to **bananaOS**, a potassium-rich, high-performance web-based operating 
 
 ## 🖥️ Live Preview
 You can test bananaOS instantly on your browser! 
-👉 **[CLICK HERE TO RUN BANANAOS] 
+👉 **(https://bananaos-delta.vercel.app/)
 
+NOTE: I´m still editing this project, may have bugs on it. If you have an app idea to it, pls tell me.
 ---
 
 ## ✨ Key Features (Parody Edition)
