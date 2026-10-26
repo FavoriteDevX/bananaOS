@@ -188,7 +188,7 @@ body {
 }
 
 .dock {
-    background: rgba(25px, 25px, 25px, 0.3);
+    background: rgba(25, 25, 25, 0.3);
     backdrop-filter: blur(35px);
     -webkit-backdrop-filter: blur(35px);
     padding: 8px;
@@ -247,53 +247,66 @@ body {
     font-size: 22px;
     color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
 }
 
-/* Finder / Banandler Icon */
-.apple-finder {
-    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
-    color: #1d4ed8;
-    font-size: 26px;
+/* 1. Banandler / Finder Custom Parody (Yellow & White Theme) */
+.bnn-finder {
+    background: linear-gradient(135deg, #FEF08A 0%, #FFFFFF 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 1);
 }
 
-/* Safari / Bananari Icon */
+/* 2. Safari / Bananari Icon */
 .apple-safari {
     background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
-    font-size: 24px;
 }
 
-/* Messages / iBunch Icon */
+/* 3. Messages / iBunch Icon */
 .apple-messages {
     background: linear-gradient(135deg, #34c759 0%, #248a3d 100%);
-    font-size: 22px;
 }
 
-/* Mail / BananaMail Icon */
+/* 4. Mail / BananaMail Icon */
 .apple-mail {
     background: linear-gradient(135deg, #5ac8fa 0%, #007aff 100%);
-    font-size: 20px;
 }
 
-/* Music / Banana Music Icon */
+/* 5. Music / Banana Music Icon */
 .apple-music {
     background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
-    font-size: 22px;
 }
 
-/* System Settings / Plantain Settings Icon */
+/* 6. App Store / Peel Store Icon */
+.bnn-store {
+    background: linear-gradient(135deg, #5ac8fa 0%, #007aff 100%);
+}
+
+/* 7. Photos / Bunch Photos Icon */
+.bnn-photos {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* 8. Maps / Chiquita Maps Icon */
+.bnn-maps {
+    background: linear-gradient(135deg, #34c759 0%, #5ac8fa 100%);
+}
+
+/* 9. System Settings / Plantain Settings Icon */
 .apple-settings {
     background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%);
-    color: #3a4454;
-    font-size: 24px;
 }
 
-/* Trash / Peel Trash Icon */
+/* 10. Trash / Peel Trash Icon */
 .apple-trash {
     background: none;
     box-shadow: none;
-    font-size: 26px;
-    color: rgba(240, 240, 240, 0.85);
 }
-.apple-trash:hover {
-    color: #ffffff;
+.apple-trash:hover svg {
+    opacity: 1;
+    filter: drop-shadow(0px 2px 8px rgba(255,255,255,0.3));
+}
+.apple-trash svg {
+    opacity: 0.85;
+    transition: opacity 0.2s;
 }
